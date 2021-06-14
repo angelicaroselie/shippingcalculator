@@ -1,10 +1,11 @@
 print("\n~~~~~~~ Shipping price calculator ~~~~~~~")
 
-
 #Ground premium value
 cost_ground_premium = 125.00
-default_ground_cost_multiplier = 1.5
+
+#Ground and drone shipping default costs
 default_ground_cost = 20
+default_ground_cost_multiplier = 1.5
 default_drone_cost_multiplier = 4
 
 #Input for weight
@@ -23,7 +24,6 @@ elif weight <= 10:
 else:
   cost_ground = weight * (default_ground_cost_multiplier * 3) + default_ground_cost
   cost_drone = weight * (3 * default_drone_cost_multiplier)
-
 
 print()
 
